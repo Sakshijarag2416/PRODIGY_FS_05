@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>Social Media App</title>
+  <link rel="stylesheet" href="style.css" />
+</head>
+<body>
+  <div class="login-container">
+    <h2>Sign In to Social Platform</h2>
+    <input type="text" id="username" placeholder="Username" />
+    <input type="email" id="email" placeholder="Email ID" />
+    <input type="password" id="password" placeholder="Password" />
+    <button onclick="login()">Sign In</button>
+  </div>
+
+  <div class="main-app" style="display:none;">
+    <header>
+      <h1>Welcome, <span id="user-name"></span></h1>
+      <button onclick="signOut()">Sign Out</button>
+    </header>
+
+    <section class="new-post">
+      <textarea id="postInput" placeholder="What's on your mind?"></textarea>
+      <input type="file" id="fileUpload" />
+      <button onclick="createPost()">Post</button>
+    </section>
+
+    <section id="postFeed" class="post-feed">
+      <!-- Posts will appear here -->
+    </section>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
